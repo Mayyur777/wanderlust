@@ -27,4 +27,4 @@ COPY --from=frontend-builder /app .
 # Expose port 5173 for the Node.js application
 EXPOSE 5173
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
